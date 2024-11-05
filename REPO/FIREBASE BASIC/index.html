@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- Sweet alert -->
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.14.4/dist/sweetalert2.min.css
+    " rel="stylesheet">
+</head>
+
+<body>
+
+    <style>
+        :root {
+            --light-color: #bafbfd;
+            --gradient: linear-gradient(270deg, #38B790, #06f7ff);
+            --color: #00dbe3;
+        }
+
+        .fb {
+            width: 30px;
+            height: 29px;
+        }
+
+        .google {
+            width: 34px;
+            height: 36px;
+        }
+
+        .linkedin {
+            width: 61px;
+            height: 32px;
+        }
+
+        #or {
+            width: 90%;
+            text-align: center;
+            border-bottom: 1px solid #9a9a9a;
+            line-height: 0.1em;
+            margin: 10px 0 20px;
+            font-size: 12px;
+        }
+
+        #or span {
+            background: #fff;
+            padding: 0 10px;
+        }
+
+        input {
+            border-radius: 20px;
+            width: 90%;
+            border: none;
+            background-color: var(--light-color);
+        }
+
+        .register {
+            width: 30%;
+            border-radius: 20px;
+            background: var(--gradient);
+            color: white;
+        }
+
+        .register:hover {
+            background: white;
+            border: 3px double var(--color);
+            box-shadow: 2px 2px 10px var(--color),
+                -2px -2px 10px var(--color);
+            color: var(--color);
+        }
+
+        .sign-up {
+            background-color: white;
+            color: #07a8ad;
+            width: 60%;
+            border-radius: 25px;
+            border: 2px double var(--color);
+            box-shadow: 2px 2px 10px white,
+                -2px -2px 10px white;
+        }
+
+        .sign-up:hover {
+            color: white;
+        }
+
+        .main-login {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 39px;
+        }
+
+        .sec-col-heading {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+        }
+
+        .sec-col {
+            background: var(--gradient);
+            /* height: 90vh; */
+        }
+
+        .first-col,
+        .sec-col {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        .highlight {
+            color: var(--color);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .first-col:hover {
+            filter: flip;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <!-- <div class="container">
+    <div class="row d-flex justify-content-center mt-5 p-3 login-row">
+        <div class="col-lg-5 col-md-5 col-sm-12 text-center first-col pb-5">
+
+            <h2 class="main-login mt-5"><span class="highlight">Login</span> to your Account</h2>
+            <p style="color: rgb(168, 168, 168);">Login using social networks</p>
+
+            <div class="all-networks   d-flex justify-content-center align-items-center mb-5">
+                <div class="networks">
+                    <a href="">
+                        <img src="./images/fb-removebg-preview.png" alt="Facebook" class="fb me-3">
+                    </a>
+                </div>
+                <div class="networks">
+                    <a href="">
+                        <img src="./images/google-removebg-preview.png" alt="Google" class="google">
+                    </a>
+                </div>
+                <div class="networks">
+                    <a href="">
+                        <img src="./images/linkedin-removebg-preview.png" alt="linkedin" class="linkedin">
+                    </a>
+                </div>
+            </div>
+
+
+            <p id="or" class="mx-auto"> <span> OR </span></p>
+
+            <input type="email" name="email" id="email" placeholder="Email" class="mb-4 p-2" title="email"
+                maxlength="40" required> <br>
+
+            <input type="password" name="password" id="password" placeholder="Password" class="p-2"
+                pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                maxlength="20" required>
+
+            <br>
+            <button class="btn mt-4 sign-in">Sign in</button>
+
+        </div>
+        <div
+            class="col-lg-4 col-md-4 col-sm-12 text-center bg-info d-flex flex-column justify-content-center align-items-center sec-col p-4">
+            <h2 class="sec-col-heading">New here?</h2>
+            <p class="mt-4">Sign up and discover a great amount of new opportunities!</p>
+            <button class="btn mt-4 sign-up">Sign up</button>
+        </div>
+    </div>
+</div> -->
+
+        <div class="container" id="one">
+            <div class="row d-flex justify-content-center mt-5 p-3 login-row">
+
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center bg-info d-flex flex-column justify-content-center align-items-center sec-col p-4 o-1"
+                    id="sec-por">
+                    <h2 class="sec-col-heading">Already have an Account?</h2>
+                    <p class="mt-4">Sign in and discover a great amount of new opportunities!</p>
+                    <button class="btn mt-4 sign-up" id="gotoSignUp">Sign in</button>
+                </div>
+
+
+                <div class="col-lg-5 col-md-5 col-sm-12 text-center first-col pb-5" id="first-por">
+
+                    <h2 class="main-login mt-5"><span class="highlight">Register</span> your Account</h2>
+                    <p style="color: rgb(168, 168, 168);">Register using social networks</p>
+
+                    <div class="all-networks   d-flex justify-content-center align-items-center mb-5">
+                        <div class="networks">
+                            <a href="">
+                                <img src="./images/fb-removebg-preview.png" alt="Facebook" class="fb me-3">
+                            </a>
+                        </div>
+                        <div class="networks">
+                            <a href="">
+                                <img src="./images/google-removebg-preview.png" alt="Google" class="google">
+                            </a>
+                        </div>
+                        <div class="networks">
+                            <a href="">
+                                <img src="./images/linkedin-removebg-preview.png" alt="linkedin" class="linkedin">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <p id="or" class="mx-auto"> <span> OR </span></p>
+
+                    <input type="email" name="email" id="email" placeholder="Email" class="mb-4 p-2" title="email"
+                        maxlength="40" required> <br>
+
+                    <input type="password" name="password" id="password" placeholder="Password" class="p-2"
+                        pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        maxlength="20" required>
+
+                    <br>
+                    <button class="btn mt-4 register" id="register">Register</button>
+
+                </div>
+
+                
+
+
+
+            </div>
+        </div>
+
+        <div class="container" id="two">
+            <div class="row d-flex justify-content-center mt-5 p-3 login-row">
+
+               
+                <div class="col-lg-5 col-md-5 col-sm-12 text-center first-col pb-5" id="login">
+
+                    <h2 class="main-login mt-5"><span class="highlight">Login</span> to your Account</h2>
+                    <p style="color: rgb(168, 168, 168);">Login using social networks</p>
+        
+                    <div class="all-networks   d-flex justify-content-center align-items-center mb-5">
+                        <div class="networks">
+                            <a href="">
+                                <img src="./images/fb-removebg-preview.png" alt="Facebook" class="fb me-3">
+                            </a>
+                        </div>
+                        <div class="networks">
+                            <a href="">
+                                <img src="./images/google-removebg-preview.png" alt="Google" class="google">
+                            </a>
+                        </div>
+                        <div class="networks">
+                            <a href="">
+                                <img src="./images/linkedin-removebg-preview.png" alt="linkedin" class="linkedin">
+                            </a>
+                        </div>
+                    </div>
+        
+        
+                    <p id="or" class="mx-auto"> <span> OR </span></p>
+        
+                    <input type="email" name="email" id="login-email" placeholder="Email" class="mb-4 p-2" title="email"
+                        maxlength="40" required> <br>
+        
+                    <input type="password" name="password" id="login-password" placeholder="Password" class="p-2"
+                        pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        maxlength="20" required>
+        
+                    <br>
+                    <button class="btn mt-4 register" id="login">Login</button>
+        
+                </div>
+        
+        
+                <div
+                    class="col-lg-4 col-md-4 col-sm-12 text-center bg-info d-flex flex-column justify-content-center align-items-center sec-col p-4 o-1">
+                    <h2 class="sec-col-heading">New here?</h2>
+                    <p class="mt-4">Sign up and discover a great amount of new opportunities!</p>
+                    <button class="btn mt-4 sign-up" id="gotoSignup">Register</button>
+                </div>
+
+                
+
+
+
+            </div>
+        </div>
+
+       
+
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script type="module">
+            function checkEmail() {
+
+                var emailValid = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+                var email = document.getElementById('email').value;
+
+
+                // Password validation
+
+
+                var passwordValid = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+                var password = document.getElementById('password').value;
+
+                if (passwordValid.test(password) === true && emailValid.test(email) === true) {
+                    alert('Correct Information');
+                }
+                else if (passwordValid.test(password) === true && emailValid.test(email) === false) {
+
+                    document.getElementById('email').style.border = '1px solid red';
+                    document.getElementById('email').style.backgroundColor = '#ffe7e0';
+
+                    alert('Invalid email');
+
+                }
+                else if (passwordValid.test(password) === false && emailValid.test(email) === true) {
+
+                    document.getElementById('password').style.border = '1px solid red';
+                    document.getElementById('password').style.backgroundColor = '#ffe7e0';
+
+                    alert('Invalid password');
+                }
+                else {
+                    document.getElementById('email').style.border = '1px solid red';
+                    document.getElementById('email').style.backgroundColor = '#ffe7e0';
+
+                    document.getElementById('password').style.border = '1px solid red';
+                    document.getElementById('password').style.backgroundColor = '#ffe7e0';
+
+                    alert('Invalid Information');
+                }
+            }
+
+        </script>
+        <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+        <script src="firebase.js" type="module"></script>
+        <script src="app.js" type="module"></script>
+    </body>
+
+</html>

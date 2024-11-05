@@ -1,0 +1,11 @@
+
+#password ,#email{
+    border-radius: 14px;
+    border: none;
+}
+#one{
+    display: none ;
+}
+#two{
+    display: block ;
+}
